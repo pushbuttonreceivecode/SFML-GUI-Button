@@ -108,14 +108,14 @@ gui::button::button(std::string s, sf::Font& font, sf::Vector2f position, sf::Ui
     m_button.setOrigin(m_button.getGlobalBounds().width/2, m_button.getGlobalBounds().height/2);
     m_button.setPosition(m_position);
 
-    sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_button.getGlobalBounds().height/4);
+    sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_text.getGlobalBounds().height/2);
 
     m_text.setPosition(textPosition);
 
     m_shadow.setFont(font);
     m_shadow = m_text;
     m_shadow.setOrigin(m_shadow.getGlobalBounds().width/2, m_shadow.getGlobalBounds().height/2);
-    m_shadow.setPosition(m_text.getPosition().x + 3.f, m_text.getPosition().y + 3.f);
+    m_shadow.setPosition(textPosition.x + 3.f, textPosition.y + 3.f);
 }
 
 gui::button::~button()
@@ -212,11 +212,11 @@ void gui::button::update(sf::Event& e, sf::RenderWindow& window)
             m_button.setOrigin(m_button.getGlobalBounds().width/2, m_button.getGlobalBounds().height/2);
             m_button.setPosition(m_position);
             m_text.setOrigin(m_text.getGlobalBounds().width/2, m_text.getGlobalBounds().height/2);
-            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_button.getGlobalBounds().height/4);
+            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_text.getGlobalBounds().height/2);
             m_text.setPosition(textPosition);
             m_text.setColor(m_textNormal);
             m_shadow.setOrigin(m_shadow.getGlobalBounds().width/2, m_shadow.getGlobalBounds().height/2);
-            m_shadow.setPosition(m_text.getPosition().x + 3.f, m_text.getPosition().y + 3.f);
+            m_shadow.setPosition(textPosition.x + 3.f, textPosition.y + 3.f);
             m_shadow.setColor(sf::Color(0,0,0));
         }
         break;
@@ -228,11 +228,11 @@ void gui::button::update(sf::Event& e, sf::RenderWindow& window)
             m_button.setOrigin(m_button.getGlobalBounds().width/2, m_button.getGlobalBounds().height/2);
             m_button.setPosition(m_position);
             m_text.setOrigin(m_text.getGlobalBounds().width/2, m_text.getGlobalBounds().height/2);
-            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_button.getGlobalBounds().height/4);
+            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_text.getGlobalBounds().height/2);
             m_text.setPosition(textPosition);
             m_text.setColor(m_textNormal);
             m_shadow.setOrigin(m_shadow.getGlobalBounds().width/2, m_shadow.getGlobalBounds().height/2);
-            m_shadow.setPosition(m_text.getPosition().x + 3.f, m_text.getPosition().y + 3.f);
+            m_shadow.setPosition(textPosition.x + 3.f, textPosition.y + 3.f);
             m_shadow.setColor(sf::Color(0,0,0));
         }
         break;
@@ -244,11 +244,11 @@ void gui::button::update(sf::Event& e, sf::RenderWindow& window)
             m_button.setOrigin(m_button.getGlobalBounds().width/2, m_button.getGlobalBounds().height/2);
             m_button.setPosition(m_position);
             m_text.setOrigin(m_text.getGlobalBounds().width/2, m_text.getGlobalBounds().height/2);
-            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_button.getGlobalBounds().height/4);
+            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_text.getGlobalBounds().height/2);
             m_text.setPosition(textPosition);
             m_text.setColor(m_textNormal);
             m_shadow.setOrigin(m_shadow.getGlobalBounds().width/2, m_shadow.getGlobalBounds().height/2);
-            m_shadow.setPosition(m_text.getPosition().x + 3.f, m_text.getPosition().y + 3.f);
+            m_shadow.setPosition(textPosition.x + 3.f, textPosition.y + 3.f);
             m_shadow.setColor(sf::Color(0,0,0));
         }
         break;
@@ -260,11 +260,11 @@ void gui::button::update(sf::Event& e, sf::RenderWindow& window)
             m_button.setOrigin(m_button.getGlobalBounds().width/2, m_button.getGlobalBounds().height/2);
             m_button.setPosition(m_position);
             m_text.setOrigin(m_text.getGlobalBounds().width/2, m_text.getGlobalBounds().height/2);
-            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_button.getGlobalBounds().height/4);
+            sf::Vector2f textPosition = sf::Vector2f(m_button.getPosition().x, m_button.getPosition().y - m_text.getGlobalBounds().height/2);
             m_text.setPosition(textPosition);
             m_text.setColor(m_textNormal);
             m_shadow.setOrigin(m_shadow.getGlobalBounds().width/2, m_shadow.getGlobalBounds().height/2);
-            m_shadow.setPosition(m_text.getPosition().x + 3.f, m_text.getPosition().y + 3.f);
+            m_shadow.setPosition(textPosition.x + 3.f, textPosition.y + 3.f);
             m_shadow.setColor(sf::Color(0,0,0));
         }
         break;
