@@ -7,7 +7,7 @@ SFML GUI Button class example
 Did not distribute font with the example - it can be found here:
 http://www.dafont.com/continuum.font
 
-## Addendum 6/15/20121
+## Addendum 6/15/2021
 This tiny project, while written long ago, originally depended on the Thor library for SFML.
 You may find support for features out of the box via [the Thor repo](https://github.com/Bromeon/Thor).
 However, as this was originally written in 2014, things may have changed in the APIs for either SFML
